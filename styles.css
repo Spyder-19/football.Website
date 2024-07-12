@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    background-image: url("Images/Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgb(71, 145, 225);
+    position: fixed;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-title{
+    color: rgb(130, 236, 38);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar a{
+    display:block;
+    color: white;
+    text-align:ceter;
+    padding: 15px 20px;
+}
+
+.navbar a:hover{
+    background-color:rgb(41, 54, 120);
+    color: rgb(255, 255, 255);
+    height: 25px;
+}
+
+.slider{
+    position:relative;
+    width: 100%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.386);
+    color: rgb(71, 145, 225);
+    border :none;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+ 
+.prev{
+    left:0;
+}
+.next{
+    right: 0;
+}
+
+@keyframes fade {
+    from {opacity:.5}
+    to{opacity:1}
+}
+
+.quote-container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.quote img {
+    width: 200px;
+    height:auto;
+    display:block;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.quote h2 {
+    width:70%;
+    height: 5%;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: skyblue;
+    border-radius: 10px;
+}
+
+.quote{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.start-image{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left:20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    width: 70%;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: skyblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info{
+    width: 90%;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: skyblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.img4{
+    width: 400px;
+}
+
+.rules{
+    width: 90%;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: skyblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.top-moments{
+    width: 90%;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: skyblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
